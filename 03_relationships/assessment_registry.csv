@@ -1,0 +1,6 @@
+assessment_id,assessment_name,record_type,submission_filename,reviewed_document_version,reviewed_hardware_revision,note
+AS-PWR-001,Power Assessment,existing_document,power_assessment.md,1.0,A,Synthetic historical assessment carried forward unchanged in V2
+AS-RF-001,RF Assessment,existing_document,rf_assessment.md,1.0,A,Synthetic historical assessment carried forward unchanged in V2
+AS-REL-001,Power Reliability Assessment,placeholder,,,,Synthetic review destination; no assessment document exists
+AS-CERT-001,Certification Assessment,placeholder,,,,Synthetic review destination; no certification conclusion or document exists
+AS-ENC-001,Enclosure Assessment,placeholder,,,,Synthetic review destination; no assessment document exists

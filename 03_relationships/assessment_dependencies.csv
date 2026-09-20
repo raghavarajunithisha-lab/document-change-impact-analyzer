@@ -1,0 +1,30 @@
+field,assessment_id,assessment_name,reason
+module_supply,AS-PWR-001,Power Assessment,Module-pin supply must remain within the applicable operating range
+power_path,AS-PWR-001,Power Assessment,Input-to-module conversion determines which voltage reaches the module pin
+supply_tolerance,AS-PWR-001,Power Assessment,Output tolerance affects the claimed module-pin voltage range
+regulator_capacity,AS-PWR-001,Power Assessment,Available supply capacity affects power and reliability review
+regulator_capacity,AS-REL-001,Power Reliability Assessment,Available supply capacity affects power and reliability review
+reset_evidence,AS-PWR-001,Power Assessment,Startup and reset evidence must match the reviewed hardware
+module_part_number,AS-PWR-001,Power Assessment,Module variant affects applicable electrical specifications and radio integration and mechanical review
+module_part_number,AS-RF-001,RF Assessment,Module variant affects applicable electrical specifications and radio integration and mechanical review
+module_part_number,AS-CERT-001,Certification Assessment,Module variant affects applicable electrical specifications and radio integration and mechanical review
+module_part_number,AS-ENC-001,Enclosure Assessment,Module variant affects applicable electrical specifications and radio integration and mechanical review
+antenna_type,AS-RF-001,RF Assessment,Antenna technology changes applicability of radio and installation evidence
+antenna_type,AS-CERT-001,Certification Assessment,Antenna technology changes applicability of radio and installation evidence
+antenna_type,AS-ENC-001,Enclosure Assessment,Antenna technology changes applicability of radio and installation evidence
+antenna_part_number,AS-RF-001,RF Assessment,Antenna identity determines applicable specifications and installation evidence
+antenna_part_number,AS-CERT-001,Certification Assessment,Antenna identity determines applicable specifications and installation evidence
+antenna_part_number,AS-ENC-001,Enclosure Assessment,Antenna identity determines applicable specifications and installation evidence
+antenna_connection,AS-RF-001,RF Assessment,Connector and cable configuration changes radio integration evidence
+antenna_connection,AS-CERT-001,Certification Assessment,Connector and cable configuration changes radio integration evidence
+antenna_connection,AS-ENC-001,Enclosure Assessment,Connector and cable configuration changes radio integration evidence
+antenna_mounting,AS-RF-001,RF Assessment,Mounting geometry affects antenna performance and enclosure review
+antenna_mounting,AS-ENC-001,Enclosure Assessment,Mounting geometry affects antenna performance and enclosure review
+antenna_installation_evidence,AS-RF-001,RF Assessment,Installation guidance and gain evidence support the actual external antenna configuration
+antenna_installation_evidence,AS-CERT-001,Certification Assessment,Installation guidance and gain evidence support the actual external antenna configuration
+antenna_installation_evidence,AS-ENC-001,Enclosure Assessment,Installation guidance and gain evidence support the actual external antenna configuration
+rf_impedance_scope,AS-RF-001,RF Assessment,A numeric impedance claim for a different physical path does not preserve earlier evidence applicability
+antenna_clearance,AS-RF-001,RF Assessment,Clearance must be reviewed using guidance applicable to the selected antenna
+antenna_clearance,AS-ENC-001,Enclosure Assessment,Clearance must be reviewed using guidance applicable to the selected antenna
+rf_trace_impedance,AS-RF-001,RF Assessment,Host RF trace impedance affects radio review when such a trace exists
+final_rf_evidence,AS-RF-001,RF Assessment,Final-product RF evidence must match the actual module and enclosure configuration

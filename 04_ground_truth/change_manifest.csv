@@ -1,0 +1,18 @@
+change_id,change_kind,field,old_value,new_value,document_id,section,previous_finding_id
+C-001,design_change,module_supply,5.0 V DC at module 3V3 pin,3.3 V DC at module 3V3 pin,AS-PRD-001,Component Selection,F-001
+C-001,design_change,power_path,5.0 V input directly connected to module pin,5.0 V input regulated to 3.3 V before module pin,AS-PRD-001,Power Design,F-001
+C-001,design_change,supply_tolerance,Not specified,+/-2 percent regulator output tolerance,AS-PRD-001,Power Design,F-001
+C-002,evidence_added,reset_evidence,No startup/reset timing report,AS-RST-001 v1.0 for revision B; three synthetic timing runs,AS-PRD-001,Reset,F-002
+C-003,design_change,regulator_capacity,500 mA allocated to module,250 mA allocated to module,AS-PRD-001,Power Design,
+C-004,design_change,module_part_number,ESP32-S3-WROOM-1-N8,ESP32-S3-WROOM-1U-N8,AS-PRD-001,Component Selection,
+C-004,design_change,antenna_type,Integrated PCB antenna,External antenna,AS-PRD-001,Component Selection,
+C-004,design_change,antenna_part_number,Integrated module antenna; no separate antenna part,Fictional AS-ANT-01,AS-PRD-001,Antenna and Enclosure,
+C-004,design_change,antenna_connection,Integrated antenna; no external connector or cable,Module connector and coaxial cable; no host RF feed trace,AS-PRD-001,Antenna and Enclosure,
+C-004,design_change,antenna_mounting,Integrated PCB antenna extends beyond host-board edge,External antenna mounting geometry inside plastic enclosure,AS-PRD-001,Antenna and Enclosure,
+C-004,applicability_change,antenna_installation_evidence,Separate external antenna guide not applicable,External antenna guide and gain/integration evidence missing,AS-PRD-001,Antenna and Enclosure,
+C-004,applicability_change,rf_impedance_scope,50 ohm internal module RF-path reference,50 ohm external antenna feed claim,AS-PRD-001,Antenna and Enclosure,
+C-005,design_change,antenna_clearance,15 mm around integrated PCB antenna,5 mm around external antenna,AS-PRD-001,Antenna and Enclosure,
+C-006,unchanged_finding_check,final_rf_evidence,No final-product throughput/range report,No final-product throughput/range report,AS-PRD-001,Submitted Evidence,F-003
+META-001,metadata,document_version,1.0,2.0,AS-PRD-001,Metadata,
+META-002,metadata,hardware_revision,A,B,AS-PRD-001,Metadata,
+META-003,metadata,supersedes,Not stated,AS-PRD-001 v1.0,AS-PRD-001,Metadata,

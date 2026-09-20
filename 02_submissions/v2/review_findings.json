@@ -1,0 +1,64 @@
+[
+  {
+    "finding_id": "F-001",
+    "synthetic": true,
+    "product_id": "AS-ENV-001",
+    "reviewed_version": "1.0",
+    "assessment_id": "AS-PWR-001",
+    "status": "open",
+    "category": "documented_specification_mismatch",
+    "description": "The submission specifies 5.0 V directly at the module 3V3 pin without conversion; the documented operating range is 3.0 to 3.6 V.",
+    "source_fact": "REF-001",
+    "reference": {
+      "source_file": "esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "section": "6.2",
+      "table": "6-2",
+      "printed_page": 27
+    },
+    "location": "AS-PRD-001#power-design",
+    "evidence_locations": ["AS-PRD-001#component-selection", "AS-PWR-001#power-path"],
+    "closure_criteria": "Revised documents must specify an in-range module-pin supply and a consistent power path. Treat the document discrepancy as potentially resolved pending reviewer confirmation; do not infer tested hardware compliance."
+  },
+  {
+    "finding_id": "F-002",
+    "synthetic": true,
+    "product_id": "AS-ENV-001",
+    "reviewed_version": "1.0",
+    "assessment_id": "AS-PWR-001",
+    "status": "open",
+    "category": "missing_evidence",
+    "description": "The reset circuit description lists RC values but no startup or reset timing evidence is supplied.",
+    "source_fact": "REF-024",
+    "supporting_fact_ids": ["REF-025"],
+    "reference": {
+      "source_file": "esp-hardware-design-guidelines-en-master-esp32s3.pdf",
+      "section": "1.3.3",
+      "table": "2",
+      "printed_page": 8
+    },
+    "location": "AS-PWR-001#reset",
+    "evidence_locations": ["AS-PRD-001#reset", "AS-PRD-001#submitted-evidence"],
+    "closure_criteria": "Provide startup and reset evidence tied to the reviewed design showing at least 50 microseconds rail stabilization before enable and at least 50 microseconds reset assertion. An assertion that the circuit was fixed or RC values alone is insufficient.",
+    "review_policy_note": "The request for this evidence package is a synthetic reviewer policy; the timing values come from the cited source."
+  },
+  {
+    "finding_id": "F-003",
+    "synthetic": true,
+    "product_id": "AS-ENV-001",
+    "reviewed_version": "1.0",
+    "assessment_id": "AS-RF-001",
+    "status": "open",
+    "category": "missing_evidence",
+    "description": "No final-product throughput and communication-range test evidence is provided for the specified module and enclosure configuration.",
+    "source_fact": "REF-032",
+    "reference": {
+      "source_file": "esp-hardware-design-guidelines-en-master-esp32s3.pdf",
+      "section": "1.4.7",
+      "printed_page": 30
+    },
+    "location": "AS-RF-001#final-product-validation",
+    "evidence_locations": ["AS-PRD-001#submitted-evidence", "AS-PRD-001#antenna-and-enclosure"],
+    "closure_criteria": "Provide traceable throughput and communication-range evidence for the actual reviewed module, antenna, board and enclosure configuration, including test conditions and reviewer-approved acceptance criteria. A clearance statement alone is insufficient.",
+    "review_policy_note": "The detailed evidence-request policy is synthetic. Missing evidence is not a demonstrated RF failure or a certification verdict."
+  }
+]

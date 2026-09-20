@@ -1,0 +1,7 @@
+change_id,expected_status,affected_assessments
+C-001,F-001 potentially resolved pending review,AS-PWR-001
+C-002,F-002 potentially resolved pending review,AS-PWR-001
+C-003,new finding,AS-PWR-001;AS-REL-001
+C-004,review required,AS-PWR-001;AS-RF-001;AS-CERT-001;AS-ENC-001
+C-005,review required,AS-RF-001;AS-ENC-001
+C-006,F-003 remains open,AS-RF-001
