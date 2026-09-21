@@ -8,9 +8,8 @@ A deterministic Python pipeline that answers: *when a manufacturer submits a
 new document version, what changed, which earlier findings may be resolved,
 and which other assessments must be reviewed because of those changes?*
 
-No external dependencies — standard library only.
+No external dependencies , standard library only.
 
----
 
 ## Quick start
 
@@ -26,7 +25,6 @@ python run.py
 python -m unittest discover tests -v
 ```
 
----
 
 ## Official reference PDFs (required)
 
@@ -34,10 +32,10 @@ The pipeline validates paraphrased technical facts against real Espressif
 documentation. The PDFs are **not included** in this repository because
 redistribution has not been confirmed. Download them yourself from Espressif:
 
-| Document | Filename to save as | Download |
-|---|---|---|
-| ESP32-S3-WROOM-1 & WROOM-1U Datasheet | `esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf` | [Espressif product page](https://www.espressif.com/en/products/modules/esp32-s3-wroom-1-wroom-1u) → Documentation |
-| ESP32-S3 Hardware Design Guidelines | `esp-hardware-design-guidelines-en-master-esp32s3.pdf` | [Espressif technical documents](https://www.espressif.com/en/support/documents/technical-documents?keys=ESP32-S3) |
+| Document | Reference link |
+|---|---|
+| ESP32-S3-WROOM-1 & WROOM-1U Datasheet | [Datasheet (HTML)](https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.html) |
+| ESP32-S3 Hardware Design Guidelines | [Design Guidelines (HTML)](https://documentation.espressif.com/esp-hardware-design-guidelines/en/latest/esp32s3/index.html) |
 
 Place both files in:
 
@@ -48,10 +46,9 @@ Place both files in:
 The file-presence validator will report them as missing until they are
 downloaded. The rest of the pipeline (change detection, reassessment, impact
 tracing) runs entirely from the paraphrased `facts.csv` and synthetic
-submissions, so it works without the PDFs — only the validator's source-file
+submissions, so it works without the PDFs , only the validator's source-file
 check will warn.
 
----
 
 ## Repository structure
 
@@ -80,8 +77,6 @@ data/
 └── README.md                       ← this file
 ```
 
----
-
 ## What the pipeline does
 
 1. **Validates** dataset structure (17 files, ID alignment, staleness
@@ -93,7 +88,7 @@ data/
    regressions (e.g. the 250 mA capacity drop)
 6. **Generates** a human-readable report and a JSON report
 
----
+
 
 ## What this is NOT
 
@@ -106,7 +101,7 @@ data/
 - The official PDFs are copyrighted by Espressif Systems and are not
   redistributed here.
 
----
+
 
 ## License
 

@@ -7,8 +7,8 @@
       "size_bytes": 4193030,
       "provenance": "Official Espressif document; not redistributed in this repository",
       "document_label": "Hardware Design Guidelines Release master; cover Aug 07, 2026; revision history v1.8 dated 2025-07-03",
-      "download": "https://www.espressif.com/en/support/documents/technical-documents?keys=ESP32-S3",
-      "download_note": "Search for 'ESP32-S3 Hardware Design Guidelines' and download the English PDF. Save as the filename shown in 'path' above."
+      "download": "https://documentation.espressif.com/esp-hardware-design-guidelines/en/latest/esp32s3/index.html",
+      "download_note": "Official Espressif online documentation. PDF version may be available from the same page."
     },
     {
       "path": "00_sources/official/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
@@ -16,8 +16,8 @@
       "size_bytes": 1280501,
       "provenance": "Official Espressif document; not redistributed in this repository",
       "document_label": "Datasheet v1.8 (2026-03-02)",
-      "download": "https://www.espressif.com/en/products/modules/esp32-s3-wroom-1-wroom-1u",
-      "download_note": "Go to the product page Documentation section and download the English datasheet PDF. Save as the filename shown in 'path' above."
+      "download": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.html",
+      "download_note": "Official Espressif online documentation. PDF version may be available from the same page."
     }
   ]
 }
